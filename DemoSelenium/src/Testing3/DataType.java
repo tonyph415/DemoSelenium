@@ -8,6 +8,8 @@ public class DataType {
 		String s = "Hello Java";     	// String ""
 		System.out.println(s);
 		
+		System.out.println("The primitive data types");
+		
 		int i = 1234567890; 			// Integer (whole number - max 10#)
 		System.out.println(i);
 		
@@ -47,6 +49,9 @@ public class DataType {
 		String y= "Morning ";
 		System.out.println(x+y);
 		
+}
+}
+	
 		
 //		byte	1 byte	Stores whole numbers from -128 to 127
 //		short	2 bytes	Stores whole numbers from -32,768 to 32,767
@@ -66,5 +71,3 @@ public class DataType {
 //		Even though there are many numeric types in Java, the most used for numbers are int (for whole numbers)
 //		and double (for floating point numbers). However, we will describe them all as you continue to read.
 //	
-}
-}
