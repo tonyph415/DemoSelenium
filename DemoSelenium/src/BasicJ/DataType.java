@@ -1,4 +1,4 @@
-package Testing3;
+package BasicJ;
 
 public class DataType {
 
