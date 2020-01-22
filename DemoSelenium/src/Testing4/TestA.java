@@ -49,25 +49,19 @@ public class TestA {
             
             try {
                 huc = (HttpURLConnection)(new URL(url).openConnection());
-                
                 huc.setRequestMethod("HEAD");
-                
                 huc.connect();
-                
                 respCode = huc.getResponseCode();
-                
                 if(respCode >= 400){
                     System.out.println(url+" is a broken link");
                 }
                 else{
                     System.out.println(url+" is a valid link");
                 }
-                    
+             // generated catch block
             } catch (MalformedURLException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             } catch (IOException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
@@ -75,7 +69,6 @@ public class TestA {
         driver.quit();
 
     }
-
 
 	}
 
