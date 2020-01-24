@@ -16,11 +16,6 @@ public class DropDown {
 		    driver.get("https://www.facebook.com//");
 		    System.out.println(driver.getTitle());
 		    
-		    driver.findElement(By.name("firstname")).sendKeys("mecury");
-		    driver.findElement(By.name("lastname")).sendKeys("mecury");
-		    driver.findElement(By.name("reg_email__")).sendKeys("mecury@mail.com");
-		    driver.findElement(By.name("reg_passwd__")).sendKeys("mecury.com");
-		    driver.findElement(By.name("reg_email_confirmation__")).sendKeys("mecury.com");
 		    
 		    // Dropdown using select:
 		    Select day = new Select(driver.findElement(By.id("day")));
@@ -33,7 +28,7 @@ public class DropDown {
 		    
 //		    System.out.println(driver.getTitle());
 		    
-//		    driver.close();
+		    driver.close();
 		    
 	}
 
