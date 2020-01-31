@@ -22,3 +22,9 @@ public class ChromeFacebook {
 	    driver.close();
 	}
 }
+//
+//driver.findElement(By.name("firstname")).sendKeys("mecury");
+//driver.findElement(By.name("lastname")).sendKeys("mecury");
+//driver.findElement(By.name("reg_email__")).sendKeys("mecury@mail.com");
+//driver.findElement(By.name("reg_passwd__")).sendKeys("mecury.com");
+//driver.findElement(By.name("reg_email_confirmation__")).sendKeys("mecury.com");

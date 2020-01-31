@@ -17,13 +17,14 @@ package Testing4;
 	public class FindBrokenURLsByList {
 	    
 	    public static void main(String[] args) {
-	        // TODO Auto-generated method stub
+	        // generated WebBroswer 
 	        System.setProperty("webdriver.chrome.driver","C:\\Users\\Tony\\Desktop\\Testing\\WebDrivers\\chromedriver.exe");
 			
 			WebDriver driver = new ChromeDriver();
 		    System.out.println(driver.getTitle());
-	        String homePage = "http://facebook.com";
+	        String homePage = "http://newtours.demoaut.com/";
 	        String url = "";
+	      // Methods
 	        HttpURLConnection huc = null;
 	        int respCode = 200;
 	        
@@ -34,6 +35,7 @@ package Testing4;
 	        List<WebElement> links = driver.findElements(By.tagName("a"));
 	        
 	        Iterator<WebElement> it = links.iterator();
+	        System.out.println("count of the links"+ links.size());
 	        
 	        while(it.hasNext()){
 	            

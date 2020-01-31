@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test name="TestNG1(failed)" parallel="classes">
+    <classes>
+      <class name="Practice.PriorityTestCase">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Practice.PriorityTestCase -->
+      <class name="Practice.DependOnMethod">
+        <methods>
+          <include name="login"/>
+          <include name="search"/>
+        </methods>
+      </class> <!-- Practice.DependOnMethod -->
+      <class name="Practice.NewTestNG">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- Practice.NewTestNG -->
+    </classes>
+  </test> <!-- TestNG1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

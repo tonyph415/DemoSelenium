@@ -15,7 +15,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 			public static void main(String[] args) throws InterruptedException, IOException{
 				FileInputStream fil = new FileInputStream(new File("C:\\Users\\Tony\\Desktop\\Testing\\Book1.xlsx"));
 				XSSFWorkbook workbook = new XSSFWorkbook (fil);
-				XSSFSheet sheet= workbook.getSheet("Testdata");
+				XSSFSheet sheet= workbook.getSheet("UP");
 				int count = sheet.getLastRowNum();
 				System.out.println(count);
 				for(int i=1; i<=count; i++){
@@ -33,6 +33,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 				driver.get("http://facebook.com");
 				driver.findElement(By.name("email")).sendKeys(un);
 				driver.findElement(By.name("pass")).sendKeys(pwd);
+				driver.findElement(By.xpath("//*[@id=\"u_0_b\"]")).click();
 				Thread.sleep(3000);
 				driver.close();
 		}

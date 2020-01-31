@@ -2,7 +2,7 @@ package Practice;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
+///MavenDemo/testng1.xml - This is TestNG xml file to run this
 public class DependOnMethod {
 	@Test
 	public void login(){
